@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BankAccountClient
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            BankAccount bankAccount = new BankAccount("Bryan Walton", 10);
+
+            bankAccount.Credit(5);
+            bankAccount.Debit(5);
+
+            Console.WriteLine("Current balance is ${0}", bankAccount.Balance);
+            Console.ReadKey();
+
+        }
+    }
+}
